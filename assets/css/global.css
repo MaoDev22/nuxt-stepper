@@ -1,0 +1,109 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Raleway";
+}
+
+:root {
+    --primary-color: #3498db;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.form-control {
+    &>label {
+        display: block;
+        font-weight: bold;
+        font-size: 13px;
+        color: rgba(0, 0, 0, .6);
+        margin-bottom: 5px;
+    }
+
+    &>input[type="number"],
+    &>input[type="text"],
+    &>input[type="email"],
+    &>input[type="password"] {
+        width: 100%;
+        background: rgba(0, 0, 0, .1);
+        border: none;
+        outline: none;
+        padding: 14px 20px;
+        box-sizing: border-box;
+        border-radius: 0px 15px 15px 15px;
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+}
+
+.general-container-stepper {
+    display: flex;
+    justify-content: center;
+    padding: 0px 15px;
+    box-sizing: border-box;
+
+    &>div {
+        width: 100%;
+        max-width: 500px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-form {
+        width: 100%;
+        padding: 0px 15px;
+        box-sizing: border-box;
+
+        &>h3 {
+            margin-bottom: 15px;
+            margin-top: 15px;
+            color: rgba(0, 0, 0, .7);
+        }
+
+        &>form {
+            width: 100%;
+
+            &>button[type=submit] {
+                background: var(--primary-color);
+                border: none;
+                outline: none;
+                padding: 13px 20px;
+                width: 100%;
+                color: white;
+                font-weight: bold;
+                font-size: 14px;
+                border-radius: 10px;
+                margin-top: 15px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.success-alert, .error-alert {
+    padding: 15px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.success-alert {
+    background-color: #5bc292;
+}
+
+.error-alert {
+    background-color: #c96e76;
+}
+
